@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米浮动布局案例</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 1226px;
+            height: 614px;
+            /* background-color: #666; */
+            margin: 50px auto;
+        }
+
+        .zuo {
+            float: left;
+            width: 234px;
+            height: 614px;
+            background-color: #800080;
+        }
+
+        .you {
+            float: right;
+            width: 978px;
+            height: 614px;
+            /* background-color: pink; */
+        }
+
+        ul {
+            /*清除UL里面li的无序列表样式*/
+            list-style: none;
+        }
+
+        .you li {
+            /* 让小块统一左浮动 */
+            float: left;
+            width: 234px;
+            height: 300px;
+            background-color: aqua;
+            margin-right: 14px;
+            margin-top: 14px;
+        }
+
+        /*取消第4个和第8个的右间距*/
+        .you li:nth-child(4n) {
+            margin-right: 0;
+        }
+
+        /*取消前4个的上间距*/
+        .you li:nth-child(-n+4) {
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="zuo"></div>
+        <div class="you">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
