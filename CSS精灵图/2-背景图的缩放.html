@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 500px;
+            height: 500px;
+            
+            background-color: aquamarine;
+            /* background-image: url(./images/5cb972785fa64.jpg); */
+            /* 设置不平铺 */
+
+            /* background-repeat: no-repeat; */
+
+            /* 设置背景图片的大小 */
+            /* 如果图的宽或者高与盒子的尺寸相同了，那么另外一个方向会停止缩放 ，会导致盒子可能有留白*/
+
+            /* background-size:contain; */
+
+            /* 工作中，图的比例和盒子的比例都是相同的，可以使用contain或者cover 效果完全相同*/
+            background: url(./images/5cb972785fa64.jpg ) no-repeat center/cover;
+            /* 连写属性 */
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

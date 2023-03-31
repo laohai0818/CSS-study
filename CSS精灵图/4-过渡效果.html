@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        .w{
+            width: 500px;
+            height: 400px;
+        }
+       
+        .box{
+            box-sizing: border-box;  
+            overflow: hidden;
+        }
+        /* 鼠标移入让图片变大 */
+        .box .w:hover{
+            transform: scale(1.3);
+        }
+         /* 谁变化给谁添加transition属性 */
+       .box .w{
+        width: 100%;
+        height: 100%;
+        transition: 1.5s;
+       }  
+</style>
+</head>
+<body>
+    <div class="box w">
+        <img src="./images/5cb972785fa64.jpg" alt="" class="w">
+    </div>
+</body>
+</html>
