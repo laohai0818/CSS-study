@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 因为有通栏:占满一行的原因,所以需要有一个沾满一行的格子 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            height: 40px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+        }
+
+        ul {
+            list-style: none;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        ul li {
+            float: left;
+            width: 20%;
+            height: 40px;
+            border-right: 1px solid #ccc;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        ul .last {
+            border-right: none;
+        }
+
+        ul li a {
+            /* a标签默认是行内元素，宽高由内容撑开，并且无法设置宽高，此时默认情况用户只能点击文字区域才能调整 */
+            /* 如果把a标签转换成块级元素或者行内块元素，此时可以设置宽高，会让a标签范围更大，用户可以点击调整的区域也越大 */
+            /* display: inline-block; */
+            /* 如果设置行内块元素，padding生效 高度和宽度不生效 */
+            display: block;
+            /* 如果设置块元素，设置高生效，占满格子 块元素设置宽高生效 */
+            /* 宽度不设置块元素会默认占满一行 */
+            height: 40px;
+            /* 设置padding 不会让元素占满 可以预留一点位置 */
+            /* padding: 0 60px; */
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav ul li .app {
+            position: relative;
+        }
+
+        .nav ul li .app .ma {
+            position: absolute;
+            left: 50%;
+            top: 50px;
+            /* 水平居中translate写一个值就行 */
+            transform: translate(-50%);
+            display: none;
+        }
+        .nav ul li .app:hover .ma{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">我要投aaa资</a></li>
+            <li><a href="#">平台ggggg介绍</a></li>
+            <li><a href="#">新手专区</a></li>
+            <!-- 因为用户鼠标放在二维码图片上也能跳转，所以把img放在a的范围内，因此要把img写在a的内部 -->
+            <li><a href="#" class="app">手机微金所 <img class="ma" src="../CSS之定位装饰/CSS定位装饰images/二维码百度.png" alt=""></a></li>
+            <li class="last"><a href="#">个人中心</a></li>
+        </ul>
+    </div>
+</body>

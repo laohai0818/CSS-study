@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浏览器遇到行内和行内块标签会当做文字处理，默认文字是按照基线对齐 */
+        input{
+            height: 50px;
+            /* margin和padding会撑大盒子 */
+            /* box-sizing: border-box;可以绝对一个大一个小 */
+            box-sizing: border-box;
+            /* 高度一致之后，会产生上下不对齐，在其中比较大的一方添加 vertical-align: middle; 让他们居中对齐*/
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <input type="text"><input type="button" value="搜索">
+</body>
+</html>

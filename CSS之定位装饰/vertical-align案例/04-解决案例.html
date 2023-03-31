@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            width: 600px;
+            height: 600px;
+            background-color: pink;
+            /* 存在行高的问题 */
+            line-height: 600px;
+            /* 让图片水平居中 */
+            text-align: center;
+
+        }
+        /* 行高和 vertical-align: middle;配合起来 就可以让我们的图在盒子里垂直居中了*/
+        img{
+            /* 存在行高的问题 让图片在父元素中垂直居中 */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <img src="../CSS定位装饰images/无标题.png" alt="">
+    </div>
+</body>
+</html>

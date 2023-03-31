@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father{
+            /* 没有高度，靠内容撑开 */
+            width: 400px;
+            background-color: pink;
+        /* 现在是出现父元素和子元素底部没有对齐 */
+        /* vertical-align: middle; */
+            /* 给父元素设置不起效果 */
+        }
+        img{
+            /* 给 子元素设置display 转为块元素也能解决 */
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <img src="../CSS定位装饰images/无标题.png" alt="">
+    </div>
+</body>
+</html>
