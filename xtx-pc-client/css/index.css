@@ -1,0 +1,452 @@
+/* 放index页面的样式 */
+
+/* 主页页面 */
+/* .banner */
+.banner{
+    height: 500px;
+    background-color: #f5f5f5;
+}
+/* 版心 */
+.banner .banner-1{
+    position: relative;
+    height: 500px;
+    background-color: aquamarine;
+}
+/* 侧导航框 */
+.banner .banner-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 侧导航内容 */
+.banner .banner-2 li{ 
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    
+}
+.banner .banner-2 li:hover{
+background-color: #27ba9b;
+}
+
+.banner .banner-2 li a{
+    display: inline-block;
+    /* height: 50px;    */
+    padding-left: 35px;
+    padding-right: 19px;
+    color: #fff;
+}
+.banner .banner-2 li a:hover{
+    color:color ;
+    
+}
+.banner .banner-2 li a span{
+    margin-left: 15px;
+    font-size: 14px;
+}
+/* 伪元素创建 */
+.banner .banner-2 li a::after{
+    position: absolute;
+    content: '';
+    top: 19px;
+    right: 19px;
+    width: 0px;
+    height: 0px;
+    
+    /* css实现小三角， */
+    border: 6px solid;
+    border-left-color: #fff;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+}
+
+/* 箭头 */
+.banner .a-left,
+.banner .a-right{
+    position: absolute;
+    top: 228px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 45px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    font-size: 30px; 
+    color: #fff;
+}
+.banner .a-left{
+    left: 260px;
+}
+.banner .a-right{
+    right: 10px;
+}
+
+/* 设置圆点 */
+.banner ol{
+    position: absolute;
+    bottom: 31px;
+    left: 680px;
+}
+.banner ol li{
+    float: left;
+}
+.banner ol li a{ 
+    display: inline-block;
+    margin-right: 10px;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.4); 
+    border-radius: 50%;   
+}
+.banner ol .current{
+    background-color: #fff;
+    box-shadow: 0 0 8px black;
+}
+
+/* 新鲜好物-字 */
+
+.goods .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.goods .hd h2{
+    height: 114px;
+    font-size: 29px;
+    font-weight: 400;    
+}
+.goods .hd span{
+       margin-left: 34px;
+       font-size: 16px;
+       color: #999;
+}
+.goods .hd a,
+.fresh .biaoti .more{
+    color: #999;
+}
+
+.goods .hd a::after,
+.fresh .biaoti .more::after{ 
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+    
+    /* css实现小三角， */
+    border: 7px solid;
+    border-left-color: #999;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+}
+
+/* 新鲜好物-图 */
+.goods .bd li{
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: 304px;
+    height: 405px;
+    text-align: center;
+    background-color: #f0f9f4;
+
+}
+.goods .bd li:nth-child(4n){
+    margin-right: 0;
+}
+
+.goods .bd li img{
+    width: 304px;
+}
+.goods .bd li h4{
+    font-size: 20px;
+    margin: 15px 0 8px;
+    font-weight: 400;
+}
+.goods .bd li div{
+    font-size: 17px;
+    color: #9a2e1f;
+}
+.goods .bd li div span{
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.goods .bd li b{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #e5d790;
+    color: #e5d790;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* 人气推荐-字 */
+.recommend .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.recommend .hd h2{
+    height: 114px;
+    font-size: 29px;
+    font-weight: 400;    
+}
+.recommend .hd span{
+       margin-left: 34px;
+       font-size: 16px;
+       color: #999;
+}
+
+/* 人气推荐-图 */
+.recommend .bd li{
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    width: 304px;
+    height: 405px;
+    text-align: center;
+}
+.recommend .bd li:nth-child(4n){
+    margin-right: 0;
+}
+
+.recommend .bd li img{
+    width: 304px;
+}
+.recommend .bd li h4{
+    font-size: 20px;
+    margin: 15px 0 8px;
+    font-weight: 700;
+}
+.recommend .bd li div{
+    font-size: 16px;
+    color: #b5b5b5;
+}
+
+.recommend .bd li b{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #e5d790;
+    color: #e5d790;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* 热门品牌-字 */
+.brand{
+    background-color: #f5f5f5;
+}
+.popular .hd{
+    height: 114px;
+    line-height: 114px;
+}
+.popular .hd h2{
+    height: 114px;
+    font-size: 29px;
+    font-weight: 400;    
+}
+.popular .hd span{
+       margin-left: 34px;
+       font-size: 16px;
+       color: #999;
+}
+.popular .hd a{
+    color: #999;
+}
+
+.popular .hd a::after{ 
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+    
+    /* css实现小三角， */
+    border: 7px solid;
+    border-left-color: #999;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+}
+
+/* 热门品牌-图 */
+.popular .wrapper{
+    background-color: #f6f6f6;
+}
+
+.popular .bd li{
+    position: relative;
+    margin-right: 8px;
+    margin-bottom: 40px;
+    width: 304px;
+    text-align: center;
+    background-color: #f0f9f4;
+
+}
+.popular .bd li:nth-child(4n){
+    margin-right: 0;
+}
+
+.popular .bd li img{
+    width: 304px;
+}
+
+.popular .bd li b{
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    width: 28px;
+    height: 51px;
+    border: 1px solid #e5d790;
+    color: #e5d790;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* 生鲜区域-字*/
+.fresh .biaoti{
+    height: 92px;
+    line-height: 96px;
+    }
+.fresh .biaoti h3{
+    height: 92px;
+    font-size: 29px;
+    font-weight: 400;
+}
+
+.fresh .biaoti .more{
+    height: 92px;
+    margin-left: 60px;
+    color: #999;
+}
+
+.fresh .biaoti .more::after{ 
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    width: 0px;
+    height: 0px;
+    
+    /* css实现小三角， */
+    border: 7px solid;
+    border-left-color: #999;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    vertical-align: middle;
+}
+.fresh .biaoti li{
+    height: 92px;
+    margin: 0 2px;
+}
+.fresh .biaoti li a{
+    padding: 2px 10px;
+}
+.fresh .biaoti li a:hover{
+    color:#fefbfc;
+    background-color:#27ba9b ;
+}
+/* 生鲜区域-图 */
+
+.fresh .neirong .left{
+    float: left;
+    width: 240px;
+    height: 610px;
+}
+.fresh .neirong .right{
+    float: right;
+    width: 1000px;
+    height: 610px;
+}
+.fresh .neirong .left img{
+    width: 240px;
+    height: 610px;
+    
+}
+.fresh .neirong .right li{
+    position: relative;
+    float: left;
+    margin-left: 8px;
+    width: 242px;
+    height: 304px;
+    padding: 8px 29px;
+    background-color: #fff;
+
+
+}
+/* 鼠标悬浮显示 */
+.fresh .neirong .right li:hover{
+    border: 2px solid #29bb9a;
+    border-radius: 3px;
+}
+
+.fresh .neirong .right li img{
+    margin-bottom: 10px;
+}
+.fresh .neirong .right li h4{
+    font-size: 15px;
+    color: #666;
+}
+.fresh .neirong .right li div{
+    margin-top: 5px;
+    color: #9a2e1f;
+    font-weight: 700;
+}
+.fresh .neirong .right li div span{
+    font-size: 25px;
+}
+
+/* 隐藏元素 */
+.fresh .neirong .right li .yincang{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 80px;
+    background-color: #29bb9a;
+    display: none;
+}
+
+.fresh .neirong .right li .yincang a{
+    
+    padding: 10px 50px;
+
+}
+.fresh .neirong .right li .yincang h3{
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fefefe;
+    border-bottom: 2px solid #3bc2a7;
+    font-weight: 400;
+}
+.fresh .neirong .right li .yincang h4{
+    width: 120px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fefefe;
+    font-weight: 400;
+}
+
+.fresh .neirong .right li:hover .yincang{
+    display: block;
+}
