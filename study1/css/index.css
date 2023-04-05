@@ -1,0 +1,364 @@
+/* 这个index.css是用来美化首页的 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::before,
+/* 并集标签不要忘了逗号 */
+.clearfix::after {
+    content: '';
+    display: table;
+}
+
+.clearfix::after {
+    /* 真正清除浮动的标签 */
+    clear: both;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 定一个通用版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 42px;
+    /* background-color: pink; */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 70px;
+    height: 42px;
+    /* background-color: rgb(187, 163, 163); */
+}
+
+.nav li {
+    float: left;
+    line-height: 42px;
+    margin: 0 20px;
+}
+
+.nav li a {
+    /*导航a标签最好设置宽高，并且改为块级元素*/
+    display: inline-block;
+    padding: 0 10px;
+    height: 42px;
+    font-size: 18px;
+    color: black;
+}
+
+.nav li a:hover {
+    color: #009eff;
+    border-bottom: 2px solid #059af7;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 59px;
+    /* background-color: aquamarine; */
+}
+
+.search input {
+    float: left;
+    height: 42px;
+    width: 360px;
+    border: 1px solid #00a4ff;
+    border-right: none;
+    color: #bfbfbf;
+    font-size: 14px;
+    padding-left: 15px;
+}
+
+/* 控制placeholder改变样式 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #bfbfbf;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background: url(../images/btn.png);
+    border: 0;
+}
+
+.user {
+    float: right;
+    height: 42px;
+    margin-right: 30px;
+    line-height: 42px;
+}
+
+.user a img {
+    /*调节图片垂直对齐方式：middle  居中的意思*/
+    vertical-align: middle;
+}
+
+/*以上为导航区域css*/
+/*以下是轮播图区域*/
+.lungao {
+    height: 421px;
+}
+
+.banner {
+    background-color: #1c036c;
+}
+
+.banner .w {
+    width: 1200px;
+    margin: 0 auto;
+    background: url(../images/banner2.png);
+}
+
+.subnav {
+    float: left;
+    width: 190px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.subnav li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav li a {
+    font-size: 14px;
+    color: #f3f5f7;
+}
+
+.subnav li a span {
+    float: right;
+}
+
+/*并集选择器*/
+.course .db li a:hover,
+.subnav li a:hover {
+    color: #059af7;
+}
+
+.course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #f3f5f7;
+}
+
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color: #f3f5f7;
+}
+
+.course .db {
+    padding: 0 20px;
+}
+
+.course .db li {
+    padding: 14px 0;
+    border-bottom: 1px solid #a5a5a5;
+}
+
+.course .db li a {
+    color: #4e4e4e;
+    font-size: 16px;
+}
+
+.course .db li a p {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.course .a-a {
+    display: block;
+    height: 38px;
+    margin-top: 5px;
+    border: #009eff 1px solid;
+    color: #00a4ff;
+    text-align: center;
+    line-height: 38px;
+    font-weight: 700;
+}
+
+/* 精品推荐 */
+.goods {
+    height: 60px;
+    margin-top: 8px;
+    /* x 偏移量 | y 偏移量 | 阴影模糊半径 | 阴影扩散半径 | 阴影颜色 */
+    /* box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);  */
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    line-height: 60px;
+}
+
+.goods h2 {
+    float: left;
+    margin: 0 30px;
+    text-align: center;
+    font-size: 16px;
+    color: #00a4ff;
+}
+
+.goods ul li {
+    float: left;
+
+}
+
+.goods ul li a {
+    padding: 10px 30px;
+    border-left: 1px solid #bfbfbf;
+    color: #050505;
+}
+
+.goods .change {
+    float: right;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #00a4ff;
+}
+
+/* 精品课程 */
+.tuijian {
+    margin-top: 30px;
+
+}
+
+.tuijian .box-hx {
+    height: 40px;
+    line-height: 40px;
+}
+
+.tuijian .box-hx h3 {
+    float: left;
+    font-weight: 400;
+    font-size: 20px;
+    color: #494949;
+}
+
+.tuijian .box-hx a {
+    float: right;
+    padding: 0 30px;
+    font-size: 14px;
+    color: #5a5a5a;
+}
+
+.box-bb li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    margin-right: 15px;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.box-bb li:nth-child(5n) {
+    margin-right: 0;
+}
+
+.box-bb li em {
+    position: absolute;
+    
+    right: -4px;
+}
+
+.box-bb li a img {
+    width: 228px;
+}
+
+.box-bb li h4 {
+    margin: 20px 20px 20px 25px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #050505;
+}
+
+.box-bb li div {
+    /* text-align: center; */
+    margin-left: 25px;
+    font-size: 12px;
+    color: #999;
+}
+
+.box-bb li span {
+    color: #ff7c2d;
+}
+
+/* 不要忘了 上一个元素没有高度并且浮动了，需要清除浮动  */
+.footer {
+    height: 417px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.footer-logo {
+    float: left;
+    margin-top: 30px;
+}
+
+.footer-logo p {
+    margin: 20px 0;
+
+    color: #666;
+    font-size: 12px;
+}
+
+.footer-logo .xiazai {
+    display: block;
+    width: 118px;
+    height: 33px;
+    border: 1px solid #00a4ff;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 5px;
+    color: #00a4ff;
+}
+
+.footer-right {
+    float: right;
+}
+
+.footer-right dl {
+    float: left;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.footer-right dt {
+    font-size: 16px;
+    color: #050505;
+    margin-bottom: 5px;
+}
+
+.footer-right dd a {
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 5px;
+}
